@@ -58,6 +58,49 @@ Build/*
 Build/*/**
 !Build/*/PakBlacklist*.txt
 
+# Content
+Content/All_Assets/*
+Content/Art/*
+Content/Audio/*
+Content/Big_Gates_pack/*
+Content/Blueprint/*
+Content/BrazilianCity/*
+Content/Characters/*
+Content/CityBeachStrip/*
+Content/CityBrickWallPack/*
+Content/CityKitBR_V3/*
+Content/CityKitBR_V4/*
+Content/CityKitBR_V5/*
+Content/Collections/*
+Content/Colorama/*
+Content/Construction_VOL1/*
+Content/Favela/*
+Content/Favelas/*
+Content/FPS_Mobile_Game_Map_v2/*
+Content/FPS_Mobile_Game_Map_v3/*
+Content/Ghost_Town_VOL6/*
+Content/Hangar/*
+Content/Ladder_Pro/*
+Content/LandHeightmapsVol1/*
+Content/LevelPrototyping/*
+Content/Megapack/*
+Content/Military_field_camp/*
+Content/Military_VOL3_Checkpoint/*
+Content/Slum_House_KIT/*
+Content/Steel_Barrel_KIT/*
+Content/Tropical/*
+Content/Tropical_Jungle_Pack/*
+Content/Warehouse/*
+Content/__ExternalActors__/*
+Content/__ExternalObjects__/*
+Content/Environments/*
+Content/FPS/*
+Content/ThirdPerson/*
+Plugins/*
+Packs/*
+Refs/*
+Saved/*
+
 # Don't ignore icon files in Build
 !Build/**/*.ico
 
@@ -73,3 +116,5 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Combatzone.uproject
+Content/Untitled.umap
