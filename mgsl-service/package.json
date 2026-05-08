@@ -1,0 +1,19 @@
+{
+  "name": "mgsl-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mgsl backend (Cloudflare Worker + D1 + R2) and web dashboard",
+  "scripts": {
+    "dev:worker": "pnpm --filter @mgsl/worker dev",
+    "dev:web": "pnpm --filter @mgsl/web dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "db:migrate:local": "pnpm --filter @mgsl/worker db:migrate:local",
+    "db:migrate:remote": "pnpm --filter @mgsl/worker db:migrate:remote"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

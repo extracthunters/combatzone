@@ -1,0 +1,5 @@
+JWT_SECRET=replace-me-with-a-long-random-string
+R2_ACCOUNT_ID=replace-with-cloudflare-account-id
+R2_ACCESS_KEY_ID=replace-with-r2-access-key-id
+R2_SECRET_ACCESS_KEY=replace-with-r2-secret-access-key
+R2_PUBLIC_BUCKET=mgsl-assets

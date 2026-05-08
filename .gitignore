@@ -118,3 +118,17 @@ Plugins/**/Intermediate/*
 DerivedDataCache/*
 Combatzone.uproject
 Content/Untitled.umap
+
+# --- Mgsl plugin: keep source, ignore build artifacts ---
+!Plugins/Mgsl/
+Plugins/Mgsl/Binaries/
+Plugins/Mgsl/Intermediate/
+
+# --- Mgsl backend service ---
+mgsl-service/**/node_modules/
+mgsl-service/**/dist/
+mgsl-service/**/.wrangler/
+mgsl-service/**/.dev.vars
+mgsl-service/**/.dev.vars.local
+mgsl-service/**/coverage/
+

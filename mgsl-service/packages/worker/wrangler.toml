@@ -1,0 +1,41 @@
+name = "mgsl-worker"
+main = "src/index.ts"
+compatibility_date = "2025-01-15"
+compatibility_flags = ["nodejs_compat"]
+
+# --- D1 (metadata) ---
+# Create with: wrangler d1 create mgsl
+# Then paste the database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "mgsl"
+database_id = "REPLACE_WITH_D1_ID"
+migrations_dir = "src/db/migrations"
+
+# --- R2 (asset blobs) ---
+# Create with: wrangler r2 bucket create mgsl-assets
+[[r2_buckets]]
+binding = "ASSETS"
+bucket_name = "mgsl-assets"
+
+# --- Durable Object: lock arbiter (added in Phase 3) ---
+# Uncomment when LockRoom DO is implemented.
+# [[durable_objects.bindings]]
+# name = "LOCK_ROOMS"
+# class_name = "LockRoom"
+#
+# [[migrations]]
+# tag = "v1"
+# new_classes = ["LockRoom"]
+
+# Variables (non-secret). Secrets go via `wrangler secret put`.
+[vars]
+ENVIRONMENT = "development"
+TOKEN_TTL_SECONDS = "86400"
+DEFAULT_LOCK_TTL_SECONDS = "1800"
+
+# Secrets to set with `wrangler secret put`:
+#   JWT_SECRET           # HMAC key for signing JWTs
+#   R2_ACCESS_KEY_ID     # for presigned URL signing
+#   R2_SECRET_ACCESS_KEY
+#   R2_ACCOUNT_ID
